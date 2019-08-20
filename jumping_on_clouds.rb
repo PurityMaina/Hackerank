@@ -33,3 +33,24 @@ fptr.write result
 fptr.write "\n"
 
 fptr.close()
+
+
+def jumpingOnClouds(c)
+#get current position, check if cumulus
+#Jump to the next cumulus cloud equal to the number of the current cloud plus 2.
+#If Thundercloud, skip i.e of the current cloud plus 1. 
+
+skip =  0
+position = 0
+n = gets.chomp.to_i
+clouds = gets.chomp.split(' ').map(&:to_i)
+
+    while position < n
+          if clouds[position + 2] == 0
+          position +=2
+        else
+            pos += 1        
+        end
+    skip += 1
+    end
+end
